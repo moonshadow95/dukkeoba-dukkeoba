@@ -10,22 +10,29 @@
 </head>
 <body class="overflow-x-hidden flex flex-col mx-auto xl:max-w-[80vw] bg-black text-[#7C7C7C] max-w-screen">
 <header
-    class="header absolute top-0 left-0 right-0 m-auto z-10 flex justify-between xl:w-[80vw] align-center h-[150px] px-16 2xl:px-44">
+    class="header absolute top-0 left-0 right-0 m-auto z-10 flex justify-between xl:w-[80vw] align-center h-[60px] md:h-[100px] lg:h-[150px] px-[21px] md:px-12 2xl:px-44 bg-white lg:bg-transparent">
     <!--로고-->
-    <div class="mt-auto mb-auto">
+    <div class="my-auto ml-auto lg:ml-0">
         <a href="#">
-            <span class="text-[#EB6E34] text-4xl font-bold">두껍아 두껍아</span>
+            <span class="text-[#EB6E34] text-xl md:text-4xl font-bold">두껍아 두껍아</span>
         </a>
     </div>
-    <nav class=" lg:block mt-auto mb-auto text-[#5A5A5A]">
-        <ul class="flex flex-col lg:flex-row lg:text-2xl font-bold md:text-xl">
-            <li class="hover:text-[#EB6E34] mr-8 xl:mr-16">
+    <div
+        class="lg:hidden absolute left-[21px] md:left-12 top-1/2 -translate-y-1/2 flex flex-col items-center justify-between h-[12px] md:h-[24px]">
+        <span class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34]"></span>
+        <span class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34]"></span>
+        <span class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34]"></span>
+    </div>
+    <nav
+        class="hidden absolute left-0 top-[60px] md:top-[100px] lg:static lg:block mt-auto mb-auto text-[#5A5A5A] bg-white lg:bg-transparent">
+        <ul class="flex flex-col lg:flex-row lg:text-2xl font-bold md:text-xl p-8 gap-16 lg:gap-0 items-center">
+            <li class="hover:text-[#EB6E34] mx-auto lg:mr-8 xl:mr-16 text-center">
                 <a href="#">HOME</a>
             </li>
-            <li class="hover:text-[#EB6E34] mr-8 xl:mr-16">
+            <li class="hover:text-[#EB6E34] mx-auto lg:mr-8 xl:mr-16 text-center">
                 <a href="#">ABOUT</a>
             </li>
-            <li class="hover:text-[#EB6E34] mr-8 xl:mr-16">
+            <li class="hover:text-[#EB6E34] mx-auto lg:mr-8 xl:mr-16 text-center">
                 <a href="#">GALLERY</a>
             </li>
             <li class="hover:text-[#EB6E34]">
@@ -37,127 +44,142 @@
 <section class="relative z-5 bg-no-repeat bg-contain w-full m-auto bg-white">
     <div class="relative">
         <img class="w-full m-auto" src="../image/bg-img-01.png" alt="배경">
-        <img class="absolute bottom-0 translate-y-1/2 right-[190px] w-[33vw]" src="../image/mock-up-01.png" alt="목업">
+        <img
+            class="absolute bottom-0 translate-y-1/2 right-[28px] lg:right-[120px] 2xl:right-[190px] w-[180px] sm:w-[300px] md:w-[300px] lg:w-[360px] 2xl:w-[650px]"
+            src="../image/mock-up-01.png" alt="목업">
     </div>
-    <div class="ml-[174px]">
-        <div class="relative w-32 mb-16">
+    <div class="mt-[60px] lg:mt-0 ml-[38px] lg:ml-[150px] xl:ml-[174px]">
+        <div class="relative w-12 md:w-24 lg:w-32 mb-8 lg:mb-16">
             <img class="relative w-32 -mt-16 z-10" src="../image/logo-icon-main.png" alt="아이콘">
-            <span class="absolute -bottom-6 -right-6 rounded-full w-16 h-16 bg-[#F79428] opacity-[0.2]"></span>
+            <span
+                class="absolute bottom-0 right-0 translate-x-[40%] translate-y-[40%] rounded-full w-8 h-8 md:w-16 md:h-16 bg-[#F79428] opacity-[0.2]"></span>
         </div>
-        <div class="text-3xl font-300">
-            <h1 class="text-5xl font-bold text-[#FF7F38] mb-5">두껍아 두껍아</h1>
+        <div class="text-sm md:text-xl lg:text-3xl font-300">
+            <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-[#FF7F38] mb-5">두껍아 두껍아</h1>
             <p class="mb-2">인테리어 기술자와 소비자의</p>
             <p class="text-[#FF7F38] mb-3">완전한 직거래 플랫폼</p>
-            <div class="flex gap-4">
-                <img class="w-44" src="../image/btn-download-apple.png" alt="앱 스토어">
-                <img class="w-44" src="../image/btn-download-android.png" alt="플레이 스토어">
+            <div class="flex gap-2 lg:gap-4">
+                <img class="lg:hidden w-[100px] md:w-[150px]" src="../image/btn-download-apple-lg.png" alt="앱 스토어">
+                <img class="lg:hidden w-[100px] md:w-[150px]" src="../image/btn-download-android-lg.png" alt="플레이 스토어">
+                <img class="w-44 hidden lg:block" src="../image/btn-download-apple.png" alt="앱 스토어">
+                <img class="w-44 hidden lg:block" src="../image/btn-download-android.png" alt="플레이 스토어">
             </div>
         </div>
     </div>
 </section>
 <section class="bg-white overflow-x-hidden overflow-clip">
-    <img class="mx-auto mt-64 mb-8" src="../image/shape.png" alt="">
+    <img class="mx-auto mt-12 xl:mt-64 mb-8" src="../image/shape.png" alt="">
     <div
-        class="relative font-bold text-[#3A3A3A] text-5xl flex flex-col items-center">
+        class="relative font-bold text-[#3A3A3A] text-base md:text-3xl lg:text-5xl flex flex-col items-center mb-16">
         <div class="relative">
-            <h3 class="text-3xl text-[#7C7C7C] mb-6">두껍아 두껍아</h3>
+            <h3 class="text-lg lg:text-3xl text-[#7C7C7C] mb-6">두껍아 두껍아</h3>
             <div class="mb-5">
                 <span>생활 속 수많은</span> <strong class="text-[#FF7F38]">인테리어 시공</strong><span>,</span>
             </div>
             <div>
                 <span>어떻게 견적 내고 시공 받으셨나요?</span>
             </div>
-            <span class="absolute -bottom-12 -right-4 rounded-full w-20 h-20 bg-[#F79428] opacity-[0.1]"></span>
-            <span class="absolute -bottom-24 -right-12 rounded-full w-8 h-8 bg-[#F79428] opacity-[0.1]"></span>
+            <span
+                class="absolute bottom-0 right-0 translate-y-1/2 translate-x-1/2 rounded-full w-12 lg:w-20 h-12 lg:h-20 bg-[#F79428] opacity-[0.1]"></span>
+            <span
+                class="absolute bottom-0 right-0 translate-y-[40px] lg:translate-y-[70px] translate-x-[40px] lg:translate-x-[70px] rounded-full w-4 lg:w-8 h-4 lg:h-8 bg-[#F79428] opacity-[0.1]"></span>
         </div>
     </div>
-    <img class="-translate-x-1/2 rotate-45 w-[33vw]"
+    <img class="m-auto lg:m-0 lg:-translate-x-1/2 rotate-45 w-[33vw]"
          src="../image/mock-up-01.png"
          alt="목업">
-    <div class="-mt-[660px] ml-auto mr-[250px] mb-[250px] w-fit text-4xl">
-        <div class="relative rounded-[22px] py-12 px-20 shadow-lg mb-24  bg-white">
-            <img class="absolute top-0 left-6 -translate-y-1/2 w-[60px]" src="../image/icon-report.png" alt="레포트 아이콘">
-            <h4 class="font-bold text-[#3A3A3A] mb-4">단 한번의 손쉬운 의뢰서 작성</h4>
-            <p class="font-[300] text-3xl">지역기반 기술자들의 견적서를 통하여 <br> 합리적으로 비교견적을 받아보세요!</p>
+    <div class="mt-8 lg:-mt-[500px] xl:-mt-[700px] mx-auto xl:mr-[250px] mb-[250px] w-fit text-lg lg:text-4xl">
+        <div class="relative rounded-lg py-6 md:py-12 px-6 md:px-20 shadow-lg mb-8 xl:mb-24  bg-white">
+            <img class="absolute top-0 left-6 -translate-y-1/2 w-[40px] lg:w-[60px]" src="../image/icon-report.png"
+                 alt="레포트 아이콘">
+            <h4 class="font-bold text-[#3A3A3A] mb-2 lg:mb-4">단 한번의 손쉬운 의뢰서 작성</h4>
+            <p class="font-[300] text-sm lg:text-3xl">지역기반 기술자들의 견적서를 통하여 <br> 합리적으로 비교견적을 받아보세요!</p>
         </div>
-        <div class="relative text-white bg-[#F79428] rounded-[22px] py-12 px-20 shadow-lg mb-24">
-            <img class="absolute top-0 left-6 -translate-y-1/2 w-[60px]" src="../image/icon-safe.png" alt="세이프 아이콘">
-            <h4 class="font-bold mb-4">우리집 안심 인테리어 실명제</h4>
-            <p class="font-[300] text-3xl">기술자 리뷰 및 정보를 통해 시공을 예측하고 <br> 믿을 수 있는 전문 프로를 만나보세요!</p>
+        <div class="relative text-white bg-[#F79428] rounded-lg py-6 md:py-12 px-6 md:px-20 shadow-lg mb-8 xl:mb-24">
+            <img class="absolute top-0 left-6 -translate-y-1/2 w-[40px] lg:w-[60px]" src="../image/icon-safe.png"
+                 alt="세이프 아이콘">
+            <h4 class="font-bold mb-2 lg:mb-4">우리집 안심 인테리어 실명제</h4>
+            <p class="font-[300] text-sm lg:text-3xl">기술자 리뷰 및 정보를 통해 시공을 예측하고 <br> 믿을 수 있는 전문 프로를 만나보세요!</p>
         </div>
-        <div class="relative rounded-[22px] py-12 px-20 shadow-lg bg-white">
-            <img class="absolute top-0 left-6 -translate-y-1/2 w-[60px]" src="../image/icon-message.png" alt="메세지 아이콘">
-            <h4 class="font-bold text-[#3A3A3A] mb-4">고객 정보는 시공확정까지 안전하게</h4>
-            <p class="font-[300] text-3xl">채팅서비스로 합리적인 비교 견적을 <br> 받아보세요!</p>
+        <div class="relative rounded-lg py-6 md:py-12 px-6 md:px-20 shadow-lg bg-white">
+            <img class="absolute top-0 left-6 -translate-y-1/2 w-[40px] lg:w-[60px]" src="../image/icon-message.png"
+                 alt="메세지 아이콘">
+            <h4 class="font-bold text-[#3A3A3A] mb-2 lg:mb-4">고객 정보는 시공확정까지 안전하게</h4>
+            <p class="font-[300] text-sm lg:text-3xl">채팅서비스로 합리적인 비교 견적을 <br> 받아보세요!</p>
         </div>
     </div>
 </section>
-<section class="text-[#3A3A3A] h-screen bg-white text-5xl">
+<section class="text-[#3A3A3A] h-screen bg-white text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl">
     <div class="w-full bg-[url('../image/bg-img-02.png')] bg-contain bg-no-repeat">
-        <div class="pt-64 pl-72">
+        <div class="pt-[50px] sm:pt-24 md:pt-28 md:pl-48 xl:pt-64 pl-[50px] sm:pl-16 md:pl-48 xl:pl-72">
             <h3 class="relative font-bold leading-snug">두껍아 두껍아는 <br>
-                <span class="absolute -top-8 left-0 rounded-full w-6 h-6 bg-[#EB6E34]"></span>
+                <span
+                    class="absolute -top-2 lg:-top-5 xl:-top-8 left-1 md:left-2 rounded-full w-2 lg:w-4 xl:w-6 h-2 lg:h-4 xl:h-6 bg-[#EB6E34]"></span>
                 <strong class="text-[#EB6E34]">합리적이고</strong><br>
                 <strong class="text-[#EB6E34]">전문적이고</strong><br>
                 <strong class="text-[#EB6E34]">간편한</strong> 직거래 플랫폼입니다.
             </h3>
         </div>
-        <ul class="relative z-10 w-full flex justify-around px-24 mt-[270px]">
+        <ul class=" relative z-10 w-full flex justify-around sm:px-24 mt-[120px] lg:mt-[270px] xl:mt-[200px] flex-wrap text-xl lg:text-2xl 2xl:text-5xl">
             <li
-                class="flex flex-col items-center justify-center bg-white rounded-[30px] w-[440px] h-[600px] shadow-lg text-center font-bold">
-                <h4>완전한 <strong class="text-[#EB6E34]">직거래</strong></h4>
-                <div class="py-16">
-                    <img src="../image/icon-shake-hand.png" alt="악수 아이콘">
+                class="flex flex-col items-center justify-center bg-white rounded-lg w-[180px] md:w-[260px] xl:w-[280px] 2xl:w-[420px] md:h-[300px] lg:h-[440px] xl:h-[600px] shadow-lg text-center font-bold p-8">
+                <h4 class="mb-2">완전한 <strong class="text-[#EB6E34] ">직거래</strong></h4>
+                <div class="py-4 lg:py-16 order-first lg:order-none">
+                    <img class="" src="../image/icon-shake-hand.png" alt="악수 아이콘">
                 </div>
-                <p class="text-[#4A4A4A] text-2xl leading-relaxed">인테리어 업체의 개입없는<br>
-                    인테리어 기줄자와 소비자의<br>
+                <p class="text-[#4A4A4A] text-sm lg:text-base xl:text-2xl leading-relaxed">인테리어 업체의
+                    개입없는
+                    인테리어 기술자와 소비자의
                     직거래 플랫폼 서비스</p>
             </li>
             <li
-                class="flex flex-col items-center justify-center bg-white rounded-[30px] w-[440px] h-[600px] shadow-lg text-center font-bold">
-                <h4 class="leading-snug">
-                    단일 시공<br>
+                class="flex flex-col items-center justify-center bg-white rounded-lg w-[180px] md:w-[260px] xl:w-[280px] 2xl:w-[420px] md:h-[300px] lg:h-[440px] xl:h-[600px] shadow-lg text-center font-bold order-first lg:order-none mx-16 sm:mx-24 lg:mx-0 mb-4 sm:mb-16 p-8">
+                <h4 class="leading-snug mb-2">
+                    단일 시공<br/>
                     <strong class="text-[#EB6E34]">전문</strong> 플랫폼
                 </h4>
-                <div class="py-16">
-                    <img src="../image/icon-thumb.png" alt="엄지 아이콘">
+                <div class="py-4 lg:py-16 order-first lg:order-none">
+                    <img class="" src="../image/icon-thumb.png" alt="엄지 아이콘">
                 </div>
-                <p class="text-[#4A4A4A] text-2xl leading-relaxed">Small But Good<br>
-                    작은 시공도 더 꼼꼼하고<br>
+                <p class="text-[#4A4A4A] text-sm lg:text-base xl:text-2xl leading-relaxed">Small But Good<br>
+                    작은 시공도 더 꼼꼼하고
                     확실하게 잘하는 믿음가는 서비스</p>
             </li>
             <li
-                class="flex flex-col items-center justify-center bg-white rounded-[30px] w-[440px] h-[600px] shadow-lg text-center font-bold">
-                <h4>수수료 <strong class="text-[#EB6E34]">0원</strong></h4>
-                <div class="py-16">
-                    <img src="../image/icon-money.png" alt="돈 아이콘">
+                class="flex flex-col items-center justify-center bg-white rounded-lg w-[180px] md:w-[260px] xl:w-[280px] 2xl:w-[420px] md:h-[300px] lg:h-[440px] xl:h-[600px] shadow-lg text-center font-bold p-8">
+                <h4 class="mb-2">수수료 <strong class="text-[#EB6E34] ">0원</strong></h4>
+                <div class="py-4 lg:py-16 order-first lg:order-none">
+                    <img class="" src="../image/icon-money.png" alt="돈 아이콘">
                 </div>
-                <p class="text-[#4A4A4A] text-2xl leading-relaxed">두껍아두껍아의<br>
-                    모든 서비스는<br>
+                <p class="text-[#4A4A4A] text-sm lg:text-base xl:text-2xl leading-relaxed">두껍아두껍아의
+                    모든 서비스는
                     100% 완전 무료!</p>
             </li>
         </ul>
     </div>
 </section>
-<section class="h-screen bg-white relative flex flex-col items-center justify-center -mb-96">
-    <div class="absolute top-[300px] right-16 ">
-        <h2 class="text-8xl font-bold text-[rgba(243,243,243,0.8)] ">두껍아 두껍아</h2>
+<section class="h-screen bg-white relative flex flex-col items-center justify-center -mb-96 -mt-36 md:mt-0">
+    <div class="hidden lg:block absolute lg:top-[280px] 2xl:top-[300px] right-16 ">
+        <h2 class="text-6xl 2xl:text-8xl font-bold text-[rgba(243,243,243,0.8)] ">두껍아 두껍아</h2>
     </div>
     <div class="text-center">
-        <div class="relative text-5xl font-bold leading-snug mb-4">
-            <div class="flex items-center justify-center pt-44">
+        <div class="text-xl md:text-3xl lg:text-5xl font-bold leading-snug lg:leading-relaxed mb-4">
+            <div class="flex items-center justify-center lg:pt-72">
                 <div class="relative">
-                    <span class="absolute -top-4 left-0 right-0 mx-auto rounded-full w-3 h-3 bg-[#EB6E34]"></span>
+                    <span
+                        class="absolute -top-3 lg:-top-4 left-0 right-0 mx-auto rounded-full w-2 lg:w-3 h-2 lg:h-3 bg-[#EB6E34]"></span>
                     <strong class="text-[#EB6E34]">
                         현</strong>
                 </div>
                 <div class="relative">
-                    <span class="absolute -top-4 left-0 right-0 mx-auto rounded-full w-3 h-3 bg-[#EB6E34]"></span>
+                    <span
+                        class="absolute -top-3 lg:-top-4 left-0 right-0 mx-auto rounded-full w-2 lg:w-3 h-2 lg:h-3 bg-[#EB6E34]"></span>
                     <strong class="text-[#EB6E34]">
                         명</strong>
                 </div>
                 <div class="relative">
-                    <span class="absolute -top-4 left-0 right-0 mx-auto rounded-full w-3 h-3 bg-[#EB6E34]"></span>
+                    <span
+                        class="absolute -top-3 lg:-top-4 left-0 right-0 mx-auto rounded-full w-2 lg:w-3 h-2 lg:h-3 bg-[#EB6E34]"></span>
                     <strong class="text-[#EB6E34]">
                         한</strong>
                 </div>
@@ -169,61 +191,63 @@
                 거품없는 <strong class="text-[#EB6E34]">인테리어</strong> 플랫폼
             </span>
             <span
-                class="absolute -bottom-11 -right-14 rounded-full w-24 h-24 bg-gradient-to-r from-[#F7A028] to-[#EB6E34]"></span>
+                class="rounded-full w-8 lg:w-24 h-8 lg:h-24 bg-gradient-to-r from-[#F7A028] to-[#EB6E34]"></span>
         </div>
-        <span class="text-3xl text-[#8D8D8D] font-[300]">소개영상을 영상으로 확인해보세요</span>
+        <span class="text-lg md:text-xl lg:text-3xl text-[#8D8D8D] font-[300]">소개영상을 영상으로 확인해보세요</span>
     </div>
-    <div class="relative z-10 mt-44">
-        <img class="m-auto" src="../image/icon-down.png" alt="아래 화살표 아이콘">
+    <div class="relative z-10 mt-24 2xl:mt-44">
+        <img class="m-auto" src="../image/icon-scroll.png" alt="아래 화살표 아이콘">
     </div>
 </section>
-<section class="h-screen bg-white relative flex flex-col items-center justify-center">
+<section class="h-screen bg-white relative flex flex-col items-center justify-center mt-[126px]">
     <div class="w-[70vw]">
         <img class="w-full" src="../image/section-05.png" alt="영상">
     </div>
 </section>
-<section class="h-screen bg-white relative flex flex-col items-center justify-center pt-[400px]">
+<section class="h-screen bg-white relative flex flex-col items-center justify-center 2xl:pt-[400px]">
     <div class="relative font-bold text-center flex flex-col justify-center gap-6">
-        <img class="absolute -top-16 left-24" src="../image/logo-icon-orange.png" alt="로고">
-        <h2 class="text-6xl text-[#FF7F38]">두껍아 두껍아</h2>
-        <span class="text-5xl text-[#3A3A3A]">앱 둘러보기</span>
-        <div class="flex justify-between gap-6">
-            <img class="" src="../image/btn-download-apple-lg.png" alt="앱 스토어">
-            <img class="" src="../image/btn-download-android-lg.png" alt="플레이 스토어">
+        <img class="absolute w-[48px] lg:w-auto -top-[36px] lg:-top-16 left-[54px] lg:left-24"
+             src="../image/logo-icon-orange.png"
+             alt="로고">
+        <h2 class="text-3xl lg:text-6xl text-[#FF7F38]">두껍아 두껍아</h2>
+        <span class="text-2xl lg:text-5xl text-[#3A3A3A]">앱 둘러보기</span>
+        <div class="flex justify-center gap-6">
+            <img class="lg:hidden w-[130px] md:w-[200px]" src="../image/btn-download-apple.png" alt="앱 스토어">
+            <img class="lg:hidden w-[130px] md:w-[200px]" src="../image/btn-download-android.png" alt="플레이 스토어">
+            <img class="w-44 hidden lg:block" src="../image/btn-download-apple-lg.png" alt="앱 스토어">
+            <img class="w-44 hidden lg:block" src="../image/btn-download-android-lg.png" alt="플레이 스토어">
         </div>
     </div>
-    <div class="flex align-center justify-between mx-36">
+    <div class="flex align-center justify-between mx-36 mt-16 xl:mt-36 w-[70vw]">
         <div class="m-auto"><img src="../image/btn-left-circle.png" alt=""></div>
-        <ul class="relative z-20 mt-44 flex align-center justify-between mx-16">
-            <li><img class="scale-[80%]" src="../image/mock-up-01.png" alt="미리보기"></li>
-            <li><img class="scale-90" src="../image/mock-up-01.png" alt="미리보기"></li>
-            <li><img class="scale-[80%]" src="../image/mock-up-01.png" alt="미리보기"></li>
+        <ul class="relative z-20 m-auto  flex align-center justify-between">
+            <li><img class="hidden lg:block lg:scale-[80%]" src="../image/mock-up-01.png" alt="미리보기"></li>
+            <li><img class="lg:scale-90" src="../image/mock-up-01.png" alt="미리보기"></li>
+            <li><img class="hidden lg:block lg:scale-[80%]" src="../image/mock-up-01.png" alt="미리보기"></li>
         </ul>
         <div class="m-auto"><img src="../image/btn-right-circle.png" alt=""></div>
     </div>
 </section>
-<div class="relative z-10 w-full">
+<div class="relative z-10 w-full -mt-36">
     <img class="w-full" src="../image/bg-img-03.png" alt="배경">
 </div>
 <section class="relative h-fit bg-white relative flex flex-col items-center pb-64">
     <div class="-mt-48">
         <img src="../image/shape.png" alt="">
     </div>
-    <div class="text-[#3A3A3A] text-center pt-16 pb-36">
-        <h2 class="font-bold text-5xl mb-8">자주 묻는 <strong class="text-[#EB6E34]">질문</strong></h2>
-        <span class="text-3xl">Q&A</span>
+    <div class="text-[#3A3A3A] text-center pt-16 pb-24 lg:pb-36">
+        <h2 class="font-bold text-2xl lg:text-5xl mb-8">자주 묻는 <strong class="text-[#EB6E34]">질문</strong></h2>
+        <span class="text-xl lg:text-3xl">Q&A</span>
     </div>
-    <!--Q&A 전체-->
-    <ul class="flex flex-col align-center justify-center gap-12 pb-[300px]">
-        <!--각 질문-->
+    <ul class="flex flex-col align-center justify-center gap-4 lg:gap-12 pb-[300px] w-90vw md:w-[70vw]">
         <li>
-            <div class="bg-[#FAFAFA] rounded-[22px] py-8 px-10 shadow-sm">
+            <div class="bg-[#FAFAFA] rounded-lg py-4 lg:py-8 px-10 shadow-sm">
                 <div class="flex align-center justify-between">
-                    <span class="font-bold text-2xl text-[#EB6E34]">두껍아 두껍아는 무료 서비스인가요?</span>
+                    <span class="font-bold text-lg lg:text-2xl text-[#EB6E34]">두껍아 두껍아는 무료 서비스인가요?</span>
                     <img src="../image/icon-up.png" alt="닫기">
                 </div>
             </div>
-            <div class="text-2xl py-8 px-8 pb-0 leading-relaxed">
+            <div class="text-base lg:text-2xl py-4 lg:py-8 px-8 pb-0 leading-relaxed">
                 <span>
                     네.두껍아두껍아의 모든 서비스는 무료입니다. <br>
                     소비자는 어떠한 과금이나 수수료 없이 모두 동일하게 사용이 가능합니다.
@@ -231,36 +255,39 @@
             </div>
         </li>
         <li class="">
-            <div class="bg-[#FAFAFA] rounded-[22px] py-8 px-10 shadow-sm">
+            <div class="bg-[#FAFAFA] rounded-lg py-4 lg:py-8 px-10 shadow-sm">
                 <div class="flex align-center justify-between">
-                    <span class="font-bold text-2xl text-[#EB6E34]">AS가 가능한가요?</span>
+                    <span class="font-bold text-lg lg:text-2xl text-[#EB6E34]">AS가 가능한가요?</span>
                     <img src="../image/icon-down.png" alt="열기">
                 </div>
             </div>
         </li>
         <li class="">
-            <div class="bg-[#FAFAFA] rounded-[22px] py-8 px-10 shadow-sm">
+            <div class="bg-[#FAFAFA] rounded-lg py-4 lg:py-8 px-10 shadow-sm">
                 <div class="flex align-center justify-between">
-                    <span class="font-bold text-2xl text-[#EB6E34]">AS가 가능한가요?</span>
+                    <span class="font-bold text-lg lg:text-2xl text-[#EB6E34]">AS가 가능한가요?</span>
                     <img src="../image/icon-down.png" alt="열기">
                 </div>
             </div>
         </li>
     </ul>
-    <div class="ml-16 absolute bottom-24">
-        <img class="ml-auto mb-4" src="../image/btn-arrow.png" alt="우리집 견적 살펴보기">
-        <span class="text-2xl font-bold text-[#F79428]">우리집 견적 살펴보기</span>
+    <div
+        class="absolute left-8 sm:left-16 md:left-24 bottom-4 lg:ml-16 lg:bottom-24 w-[70px] md:w-[100px] lg:w-[150px] text-right">
+        <img class="ml-auto mb-4 w-[30px]" src="../image/btn-arrow.png" alt="우리집 견적 살펴보기">
+        <span class="text-xs md:text-lg lg:text-2xl font-bold text-[#F79428]">우리집 견적 살펴보기</span>
     </div>
-    <div class="absolute right-16 -bottom-[350px]">
+    <div
+        class="absolute right-6 lg:right-16 -bottom-[80px] md:-bottom-[250px] lg:-bottom-[350px] w-[180px] md:w-[500px] lg:w-auto">
         <img src="../image/mock-up-ipad.png" alt="아이패드">
     </div>
 </section>
-<footer class="relative z-10 w-full bg-gradient-to-r from-[#F7A028] to-[#EB6E34] px-44 py-28 text-white">
-    <div class="relative font-bold text-xl mb-36">
-        <img class="absolute -top-11" src="../image/logo-icon-white.png" alt="로고">
+<footer
+    class="relative z-10 w-full bg-gradient-to-r from-[#F7A028] to-[#EB6E34] p-16 lg:px-24 xl:px-44 py-24 xl:py-28 text-white">
+    <div class="relative font-bold text-base md:text-xl mb-36">
+        <img class="absolute -top-6 lg:-top-11 w-[35px] lg:w-[50px]" src="../image/logo-icon-white.png" alt="로고">
         <span>두껍아 두껍아</span>
     </div>
-    <div class="flex text-md justify-between items-end">
+    <div class="flex flex-col md:flex-row text-xs md:text-sm justify-between md:items-end gap-4">
         <div>
             <ul class="flex flex-col gap-4">
                 <li><span>+2233 213 565 897</span></li>

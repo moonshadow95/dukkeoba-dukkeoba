@@ -1902,6 +1902,10 @@ body {
     margin-top: 11rem;
   }
 
+  .\32xl\:mr-\[250px\] {
+    margin-right: 250px;
+  }
+
   .\32xl\:w-\[650px\] {
     width: 650px;
   }

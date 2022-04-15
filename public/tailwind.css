@@ -680,6 +680,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 9rem;
 }
 
+.-mt-\[128px\] {
+  margin-top: -128px;
+}
+
+.-mt-64 {
+  margin-top: -16rem;
+}
+
+.-mt-32 {
+  margin-top: -8rem;
+}
+
 .flex {
   display: flex;
 }
@@ -728,6 +740,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[150px\] {
+  height: 150px;
 }
 
 .w-\[16px\] {
@@ -808,8 +828,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 35px;
 }
 
+.w-\[120px\] {
+  width: 120px;
+}
+
+.w-\[20vw\] {
+  width: 20vw;
+}
+
+.w-\[30vw\] {
+  width: 30vw;
+}
+
 .origin-left {
   transform-origin: left;
+}
+
+.origin-right {
+  transform-origin: right;
 }
 
 .-translate-y-1\/2 {
@@ -884,6 +920,36 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .translate-y-\[2px\] {
   --tw-translate-y: 2px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-2 {
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-1 {
+  --tw-translate-y: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-2 {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-1 {
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-full {
+  --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-full {
+  --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1076,6 +1142,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
+.pt-\[500px\] {
+  padding-top: 500px;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-center {
@@ -1271,8 +1353,16 @@ body {
     margin-bottom: 4rem;
   }
 
+  .sm\:h-\[4px\] {
+    height: 4px;
+  }
+
   .sm\:w-\[300px\] {
     width: 300px;
+  }
+
+  .sm\:w-\[200px\] {
+    width: 200px;
   }
 
   .sm\:px-24 {
@@ -1319,6 +1409,22 @@ body {
     margin-top: 0px;
   }
 
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:-mt-8 {
+    margin-top: -2rem;
+  }
+
   .md\:h-\[100px\] {
     height: 100px;
   }
@@ -1337,6 +1443,16 @@ body {
 
   .md\:h-\[300px\] {
     height: 300px;
+  }
+
+  .md\:h-fit {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-\[32px\] {
@@ -1408,6 +1524,10 @@ body {
 
   .md\:pl-48 {
     padding-left: 12rem;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:text-4xl {
@@ -1760,6 +1880,18 @@ body {
 
   .xl\:mt-36 {
     margin-top: 9rem;
+  }
+
+  .xl\:mt-32 {
+    margin-top: 8rem;
+  }
+
+  .xl\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
   }
 
   .xl\:h-6 {

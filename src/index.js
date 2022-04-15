@@ -8,6 +8,8 @@ function toggleNavMenu() {
     navMenu.classList.toggle('-translate-x-[200px]');
     navMenu.classList.toggle('translate-x-0');
     navMenu.classList.toggle('active')
+    navButton.classList.toggle('justify-between')
+    navButton.classList.toggle('justify-center')
     if (navMenu.classList.contains('active')) {
         navButtonActive()
     } else {
@@ -16,15 +18,15 @@ function toggleNavMenu() {
 }
 
 function navButtonActive() {
-    navButtonBar_1.classList.add('rotate-45', '-translate-y-[2px]');
+    navButtonBar_1.classList.add('rotate-45', 'translate-y-full');
     navButtonBar_2.classList.add('opacity-0');
-    navButtonBar_3.classList.add('-rotate-45', 'translate-y-[2px]');
+    navButtonBar_3.classList.add('-rotate-45', '-translate-y-full');
 }
 
 function navButtonInactive() {
-    navButtonBar_1.classList.remove('rotate-45', '-translate-y-[2px]');
+    navButtonBar_1.classList.remove('rotate-45', 'translate-y-full');
     navButtonBar_2.classList.remove('opacity-0');
-    navButtonBar_3.classList.remove('-rotate-45', 'translate-y-[2px]');
+    navButtonBar_3.classList.remove('-rotate-45', '-translate-y-full');
 }
 
 navButton.addEventListener('click', toggleNavMenu);

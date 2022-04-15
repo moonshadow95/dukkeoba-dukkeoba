@@ -7,13 +7,13 @@ const navButtonBar_3 = navButton.querySelector('span:last-child');
 function toggleNavMenu() {
     navMenu.classList.toggle('-translate-x-[200px]');
     navMenu.classList.toggle('translate-x-0');
-    navMenu.classList.toggle('active')
-    navButton.classList.toggle('justify-between')
-    navButton.classList.toggle('justify-center')
+    navMenu.classList.toggle('active');
+    navButton.classList.toggle('justify-between');
+    navButton.classList.toggle('justify-center');
     if (navMenu.classList.contains('active')) {
-        navButtonActive()
+        navButtonActive();
     } else {
-        navButtonInactive()
+        navButtonInactive();
     }
 }
 

@@ -29,4 +29,16 @@ function navButtonInactive() {
     navButtonBar_3.classList.remove('-rotate-45', '-translate-y-full');
 }
 
+const navbar = document.querySelector('header');
+const navbarHeight = navbar.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    if (window.scrollY > navbarHeight) {
+        navbar.classList.remove('lg:bg-transparent');
+        navbar.classList.add('bg-white');
+    } else {
+        navbar.classList.remove('bg-white');
+        navbar.classList.add('lg:bg-transparent');
+    }
+});
+
 navButton.addEventListener('click', toggleNavMenu);

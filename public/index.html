@@ -10,21 +10,24 @@
 </head>
 <body class="overflow-x-hidden flex flex-col mx-auto xl:max-w-[80vw] bg-black text-[#7C7C7C] max-w-screen">
 <header
-    class="header absolute top-0 left-0 right-0 m-auto z-10 flex justify-between xl:w-[80vw] align-center h-[60px] md:h-[100px] lg:h-[150px] px-[21px] md:px-12 2xl:px-44 bg-white lg:bg-transparent">
-    <!--로고-->
+    class="absolute top-0 left-0 right-0 m-auto z-10 flex justify-between xl:w-[80vw] align-center h-[60px] md:h-[100px] lg:h-[150px] px-[21px] md:px-12 2xl:px-44 bg-white lg:bg-transparent">
     <div class="my-auto ml-auto lg:ml-0">
         <a href="#">
             <span class="text-[#EB6E34] text-xl md:text-4xl font-bold">두껍아 두껍아</span>
         </a>
     </div>
     <div
+        id="navButton"
         class="lg:hidden absolute left-[21px] md:left-12 top-1/2 -translate-y-1/2 flex flex-col items-center justify-between h-[12px] md:h-[24px]">
-        <span class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34]"></span>
-        <span class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34]"></span>
-        <span class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34]"></span>
+        <span
+            class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34] transition origin-left"></span>
+        <span class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34] transition"></span>
+        <span
+            class="w-[16px] h-[2px] md:w-[32px] h-[4px] md:h-[5px] rounded-[2px] bg-[#EB6E34] transition origin-left"></span>
     </div>
     <nav
-        class="hidden absolute left-0 top-[60px] md:top-[100px] lg:static lg:block mt-auto mb-auto text-[#5A5A5A] bg-white lg:bg-transparent">
+        id="navMenu"
+        class="absolute z-10 -translate-x-[200px] lg:translate-x-0 left-0 top-[60px] md:top-[100px] lg:static lg:block my-auto text-[#5A5A5A] bg-white lg:bg-transparent transition">
         <ul class="flex flex-col lg:flex-row lg:text-2xl font-bold md:text-xl p-8 gap-16 lg:gap-0 items-center">
             <li class="hover:text-[#EB6E34] mx-auto lg:mr-8 xl:mr-16 text-center">
                 <a href="#">HOME</a>
@@ -50,7 +53,7 @@
     </div>
     <div class="mt-[60px] lg:mt-0 ml-[38px] lg:ml-[150px] xl:ml-[174px]">
         <div class="relative w-12 md:w-24 lg:w-32 mb-8 lg:mb-16">
-            <img class="relative w-32 -mt-16 z-10" src="../image/logo-icon-main.png" alt="아이콘">
+            <img class="relative w-32 -mt-16 z-5" src="../image/logo-icon-main.png" alt="아이콘">
             <span
                 class="absolute bottom-0 right-0 translate-x-[40%] translate-y-[40%] rounded-full w-8 h-8 md:w-16 md:h-16 bg-[#F79428] opacity-[0.2]"></span>
         </div>

@@ -2,7 +2,7 @@ module.exports = {
     purge: ['./public/**/*.html'],
     theme: {
         screens: {
-            'xs': '330px',
+            'xs': '370px',
             'sm': '640px',
             'md': '768px',
             'lg': '1024px',

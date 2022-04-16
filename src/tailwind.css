@@ -24,3 +24,33 @@ body {
     font-family: GmarketSans;
     font-weight: normal;
 }
+
+button.active {
+    color: #EB6E34;
+}
+
+button.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background-color: #EB6E34;
+}
+
+@media (max-width: 1023px) {
+    button.active:after {
+        left: unset;
+        right: -15px;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+li.active {
+    transform: scale(1.2);
+}

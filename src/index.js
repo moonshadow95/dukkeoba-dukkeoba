@@ -62,35 +62,53 @@ document.addEventListener('scroll', () => {
 navButton.addEventListener('click', toggleNavMenu);
 
 const carousel = document.querySelector('#carousel')
+const carouselItem = carousel.querySelector('li')
 const carouselItems = carousel.querySelectorAll('li')
 const prevButton = document.querySelector('#prevButton')
 const nextButton = document.querySelector('#nextButton')
+let itemWidth = carouselItem.getBoundingClientRect().width
+
 prevButton.addEventListener('click', () => {
-    carouselItems.forEach(item => {
-        if (item.classList.contains('active')) {
-            const prevItem = item.previousElementSibling
-            if (prevItem) {
-                item.classList.remove('active')
-                prevItem.classList.add('active')
-            } else {
-                item.classList.remove('active')
-                carouselItems[carouselItems.length - 1].classList.add('active')
-            }
+
+    const currentMargin = parseInt(carousel.style.marginLeft) || 0
+    if (currentMargin === 0) {
+        carousel.style.marginLeft = `${itemWidth}px`
+    } else {
+        if (currentMargin >= itemWidth * 2) {
+            carousel.style.marginLeft = `-${(carouselItems.length - 3) * itemWidth}px`
+        } else {
+            carousel.style.marginLeft = `${itemWidth * ((currentMargin / itemWidth) + 1)}px`
         }
-    })
+    }
+    if (1 - (currentMargin / itemWidth) >= 0) {
+        carouselItems.forEach(item => item.classList.remove('active'))
+        carouselItems[1 - (currentMargin / itemWidth)].classList.add('active')
+    } else {
+        carouselItems.forEach(item => item.classList.remove('active'))
+        carouselItems[carouselItems.length - 1].classList.add('active')
+    }
 })
 nextButton.addEventListener('click', () => {
-    carouselItems.forEach(item => {
-        if (item.classList.contains('active')) {
-            const nextItem = item.nextElementSibling
-            console.log(item)
-            if (nextItem) {
-                item.classList.remove('active')
-                nextItem.classList.add('active')
-            } else {
-                item.classList.remove('active')
-                carouselItems[carouselItems.length - 1].classList.add('active')
-            }
+
+    const currentMargin = parseInt(carousel.style.marginLeft) || 0
+    if (currentMargin === 0) {
+        carousel.style.marginLeft = `-${itemWidth}px`
+    } else {
+        if (currentMargin <= -(itemWidth * 2)) {
+            carousel.style.marginLeft = `${(carouselItems.length - 3) * itemWidth}px`
+        } else {
+            carousel.style.marginLeft = `${itemWidth * ((currentMargin / itemWidth) - 1)}px`
         }
-    })
+    }
+    if (3 + (-currentMargin / itemWidth) >= 5) {
+        carouselItems.forEach(item => item.classList.remove('active'))
+        carouselItems[0].classList.add('active')
+    } else {
+        carouselItems.forEach(item => item.classList.remove('active'))
+        carouselItems[(3 + (-currentMargin / itemWidth))].classList.add('active')
+    }
+})
+
+window.addEventListener('resize', () => {
+    itemWidth = carouselItem.getBoundingClientRect().width
 })

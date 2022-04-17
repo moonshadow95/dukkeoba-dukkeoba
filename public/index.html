@@ -51,7 +51,7 @@
             <img class="h-full w-full pointer-events-none 2xl:-mt-[200px]" src="../image/bg-img-01.png" alt="배경">
         </div>
         <img
-            class="absolute bottom-0 translate-y-1/2 right-[28px] sm:right-[60px] lg:right-[120px] 2xl:right-[250px] w-[125px] xs:w-[180px] sm:w-[240px] md:w-[300px] lg:w-[350px] 2xl:w-[408px]"
+            class="absolute bottom-0 translate-y-1/2 right-[28px] sm:right-[60px] lg:right-[120px] 2xl:right-[250px] w-[125px] xs:w-[160px] sm:w-[240px] md:w-[300px] lg:w-[350px] 2xl:w-[408px]"
             src="../image/mock-up-01.png" alt="목업">
     </div>
     <div class="mt-[60px] lg:-mt-0 ml-[38px] xs:ml-[60px] lg:ml-[150px] xl:ml-[174px] 2xl:ml-[250px]">
@@ -343,33 +343,52 @@
                 class="absolute -translate-y-1/2 -translate-x-1/2 w-[30px] sm:w-[40px] lg:w-[60px] h-[30px] sm:h-[40px] lg:h-[60px] rounded-full bg-[#F79428] opacity-[0.1]">
             </div>
         </div>
-        <ul id="carousel" class="relative z-20 m-auto flex align-center justify-between">
-            <li class="transition scale-[0] lg:scale-[1]">
-                <img class="w-[128px] xs:w-[160px] sm:w-[241px]"
-                     src="../image/mock-up-01.png"
-                     alt="미리보기">
-            </li>
-            <li class="active">
-                <img class="active transition w-[128px] xs:w-[160px] sm:w-[241px]"
-                     src="../image/mock-up-01.png"
-                     alt="미리보기">
-            </li>
-            <li class=" transition scale-[0] lg:scale-[1]">
-                <img class="w-[128px] xs:w-[160px] sm:w-[241px]"
-                     src="../image/mock-up-01.png"
-                     alt="미리보기">
-            </li>
-            <!--            <li class="transition scale-[0] lg:scale-[1]">-->
-            <!--                <img class="w-[128px] xs:w-[160px] sm:w-[241px]"-->
-            <!--                     src="../image/mock-up-01.png"-->
-            <!--                     alt="미리보기">-->
-            <!--            </li>-->
-            <!--            <li class="transition scale-[0] lg:scale-[1]">-->
-            <!--                <img class="w-[128px] xs:w-[160px] sm:w-[241px]"-->
-            <!--                     src="../image/mock-up-01.png"-->
-            <!--                     alt="미리보기">-->
-            <!--            </li>-->
-        </ul>
+        <div
+            class="relative w-[150px] xs:w-[180px] sm:w-[260px] xl:w-[1000px] my-auto h-[300px] xs:h-[400px] sm:h-[550px] xl:h-[720px] overflow-hidden z-20">
+            <ul id="carousel"
+                class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-[640px] xs:w-[800p] sm:w-[1205px] xl:w-[1600px] transition-[margin-left]">
+                <li class="float-left transition">
+                    <div id="container" class="w-full relative">
+                        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">1</span>
+                        <img class="w-[128px] xs:w-[160px] sm:w-[241px] xl:w-[320px] px-[10px]"
+                             src="../image/mock-up-01.png"
+                             alt="미리보기">
+                    </div>
+                </li>
+                <li class="float-left transition">
+                    <div class="w-full relative">
+                        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">2</span>
+                        <img class="w-[128px] xs:w-[160px] sm:w-[241px] xl:w-[320px] px-[10px]"
+                             src="../image/mock-up-01.png"
+                             alt="미리보기">
+                    </div>
+                </li>
+                <li class="active float-left transition">
+                    <div class="w-full relative">
+                        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">3</span>
+                        <img class="w-[128px] xs:w-[160px] sm:w-[241px] xl:w-[320px] px-[10px]"
+                             src="../image/mock-up-01.png"
+                             alt="미리보기">
+                    </div>
+                </li>
+                <li class="float-left  transition">
+                    <div class="w-full relative">
+                        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">4</span>
+                        <img class="w-[128px] xs:w-[160px] sm:w-[241px] xl:w-[320px] px-[10px]"
+                             src="../image/mock-up-01.png"
+                             alt="미리보기">
+                    </div>
+                </li>
+                <li class="float-left  transition">
+                    <div class="w-full relative">
+                        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">5</span>
+                        <img class="w-[128px] xs:w-[160px] sm:w-[241px] xl:w-[320px] px-[10px]"
+                             src="../image/mock-up-01.png"
+                             alt="미리보기">
+                    </div>
+                </li>
+            </ul>
+        </div>
         <div id="nextButton" class='relative cursor-pointer my-auto'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"
                  class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 w-[10px] sm:w-[15px] lg:w-[30px]"
